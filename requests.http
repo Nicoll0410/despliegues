@@ -1,0 +1,32 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Maria Jose",
+    "age" : 18,
+    "email" : "majo@gmail.com"
+}
+
+
+
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/655cf12c77df460eea41854c HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/users/655cf12c77df460eea41854c HTTP/1.1
+
+
+###
+PUT http://localhost:3000/api/users/655cf12c77df460eea41854c HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Carlos Andres",
+    "age" : 23,
+    "email" : "carlos@gmail.com"
+}
